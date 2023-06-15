@@ -1,0 +1,20 @@
+###### MAPREDUCE HADOOP ASSIGNMENT 3 #######
+
+# all codes for different question are submitted separetly
+
+# upload Speed-data.txt file in hdfs 
+hdfs dfs -put Speed-data.txt input/
+
+# check data in hdfs 
+hdfs dfs -ls input/
+
+# to list all jar files and make sure it is present
+ls -lrt hadoop
+
+# to execute the mapreduce (.jar) program
+hadoop jar speedcar.jar SpeedCar input/Speed-data.txt output/Speedcar1
+hadoop jar speedcarb.jar SpeedCarb input/Speed-data.txt output/Speedcar2
+
+# to list output from directory output
+hdfs dfs -ls  output/Speedcar1
+hdfs dfs -ls  output/Speedcar1

@@ -1,0 +1,16 @@
+###### MAPREDUCE HADOOP ASSIGNMENT 2 #######
+
+# all codes for different question are submitted separetly
+
+
+# data set already in hdfs 
+hdfs dfs -ls input/
+
+# to list all jar files and make sure it is present
+ls -lrt hadoop
+
+# to execute the mapreduce (.jar) program
+hadoop jar abccall.jar ABCcall input/Shakespeare.txt output/Abccall
+
+# to list output from directory output
+hdfs dfs -ls output/Abccall

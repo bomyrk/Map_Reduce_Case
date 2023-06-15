@@ -1,0 +1,30 @@
+###### MAPREDUCE HADOOP ASSIGNMENT 4 #######
+
+# all codes for different question are submitted separetly
+
+# upload NationalNames.csv file in hdfs 
+hdfs dfs -put NationalNames.csv input/
+
+# check data in hdfs 
+hdfs dfs -ls input/
+
+# to list all jar files and make sure it is present
+ls -lrt hadoop
+
+# to execute the mapreduce (.jar) program
+hadoop jar childname1.jar ChildName1 input/NationalNames.txt output/Childname1
+hadoop jar childname2.jar ChildName2 input/NationalNames.txt output/Childname2
+hadoop jar childname3.jar ChildName3 input/NationalNames.txt output/Childname3
+hadoop jar childname4.jar ChildName4 input/NationalNames.txt output/Childname4
+hadoop jar childname5.jar ChildName5 input/NationalNames.txt output/Childname5
+hadoop jar childname66.jar ChildName66 input/NationalNames.txt output/Childname6
+hadoop jar childname7.jar ChildName7 input/NationalNames.txt output/Childname7
+
+# to list output from directory output
+hdfs dfs -ls  output/Childname1
+hdfs dfs -ls  output/Childname2
+hdfs dfs -ls  output/Childname3
+hdfs dfs -ls  output/Childname4
+hdfs dfs -ls  output/Childname5
+hdfs dfs -ls  output/Childname6
+hdfs dfs -ls  output/Childname7
