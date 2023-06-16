@@ -16,23 +16,23 @@ hadoop jar path/to/jar/file driver/class/  <in file> <out file>
 
 ###### MAPREDUCE HADOOP ASSIGNMENT 1 #######
 
-# all codes for different question are submitted separetly
-# code 1 for question 1: Find out the count of each word in the ‘Shakespeare.txt’ dataset in the ‘Shakespeare.rar’
-# code 2 for question 2: Find out the count of each word using two reducers only
-# code 3 for question 3: Find out the most commonly used words (Words with the count over 100 are considered common)
+-- all codes for different question are submitted separetly
+--code 1 for question 1: Find out the count of each word in the ‘Shakespeare.txt’ dataset in the ‘Shakespeare.rar’
+--code 2 for question 2: Find out the count of each word using two reducers only
+--code 3 for question 3: Find out the most commonly used words (Words with the count over 100 are considered common)
 
-# upload shakepeare file in hdfs
+1 upload shakepeare file in hdfs
 hdfs dfs -put Shakespeare.txt input/
 
-# to list all jar files and make sure it is present
+2 to list all jar files and make sure it is present
 ls -lrt hadoop
 
-# to execute the mapreduce (.jar) program
+3 to execute the mapreduce (.jar) program
 hadoop jar wordcount1.jar WordCount1 input/Shakespeare.txt output/Shakespeare1
 hadoop jar wordcount2.jar WordCount1 input/Shakespeare.txt output/Shakespeare2
 hadoop jar wordcount3.jar WordCount1 input/Shakespeare.txt output/Shakespeare3
 
-# to list output from directory output
+4 to list output from directory output
 hdfs dfs -ls output/Shakespeare1
 hdfs dfs -ls output/Shakespeare2
 hdfs dfs -ls output/Shakespeare3
@@ -40,57 +40,57 @@ hdfs dfs -ls output/Shakespeare3
 
 ###### MAPREDUCE HADOOP ASSIGNMENT 2 #######
 
-# all codes for different question are submitted separetly
+-- all codes for different question are submitted separetly
 
 
-# data set already in hdfs
+1 data set already in hdfs
 hdfs dfs -ls input/
 
-# to list all jar files and make sure it is present
+2 to list all jar files and make sure it is present
 ls -lrt hadoop
 
-# to execute the mapreduce (.jar) program
+3 to execute the mapreduce (.jar) program
 hadoop jar abccall.jar ABCcall input/Shakespeare.txt output/Abccall
 
-# to list output from directory output
+4 to list output from directory output
 hdfs dfs -ls output/Abccall
 
 
 ###### MAPREDUCE HADOOP ASSIGNMENT 3 #######
 
-# all codes for different question are submitted separetly
+-- all codes for different question are submitted separetly
 
-# upload Speed-data.txt file in hdfs
+1 upload Speed-data.txt file in hdfs
 hdfs dfs -put Speed-data.txt input/
 
-# check data in hdfs
+2 check data in hdfs
 hdfs dfs -ls input/
 
-# to list all jar files and make sure it is present
+3 to list all jar files and make sure it is present
 ls -lrt hadoop
 
-# to execute the mapreduce (.jar) program
+4 to execute the mapreduce (.jar) program
 hadoop jar speedcar.jar SpeedCar input/Speed-data.txt output/Speedcar1
 hadoop jar speedcarb.jar SpeedCarb input/Speed-data.txt output/Speedcar2
 
-# to list output from directory output
+5 to list output from directory output
 hdfs dfs -ls  output/Speedcar1
 hdfs dfs -ls  output/Speedcar1
 
 ###### MAPREDUCE HADOOP ASSIGNMENT 4 #######
 
-# all codes for different question are submitted separetly
+-- all codes for different question are submitted separetly
 
-# upload NationalNames.csv file in hdfs
+1 upload NationalNames.csv file in hdfs
 hdfs dfs -put NationalNames.csv input/
 
-# check data in hdfs
+2 check data in hdfs
 hdfs dfs -ls input/
 
-# to list all jar files and make sure it is present
+3 to list all jar files and make sure it is present
 ls -lrt hadoop
 
-# to execute the mapreduce (.jar) program
+4 to execute the mapreduce (.jar) program
 hadoop jar childname1.jar ChildName1 input/NationalNames.txt output/Childname1
 hadoop jar childname2.jar ChildName2 input/NationalNames.txt output/Childname2
 hadoop jar childname3.jar ChildName3 input/NationalNames.txt output/Childname3
