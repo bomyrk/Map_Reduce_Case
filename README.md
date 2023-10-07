@@ -1,11 +1,11 @@
 # Mod-2-Assignment
  MapReduce Code
 
- these are code of MapReduce program for some simples tasks.
- 1- count word for Shakespeare dataset
- 2- time duration of international call with phone dataset
- 3- Analysis of speed dataset
- 4- Analysis of names occurrences.
+ These are code of MapReduce program for some simples tasks.
+ 1. count word for Shakespeare dataset
+ 2. time duration of international call with phone dataset
+ 3. Analysis of speed dataset
+ 4. Analysis of names occurrences.
 
 Once the code has been written in Eclipse, you have to produce the jar file and then execute it in the terminal.
 
